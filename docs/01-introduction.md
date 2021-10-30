@@ -18,8 +18,17 @@ Python 的设计哲学强调代码的可读性和简洁的语法，尤其是使�
 [下载 Python](https://www.python.org/downloads/){ .md-button .md-button--primary }
 [在淘宝 NPM 镜像源中获取](https://npmmirror.com/mirrors/python/){ .md-button }
 
-## 
+## 安装 Python
 
----
+!!! warning "注意"
+    
+    本文仅以 Windows 环境作为讲解。Linux 环境下一般使用 `python3` 命令即可调用。  
+    如果您身处桂中学校机房，Python 3.7.3（32 位）应该已经预装，
+
+1. 从 [Python 官网](https://www.python.org/downloads/) 或 [淘宝 NPM 镜像源](https://npmmirror.com/mirrors/python/) 下载适宜的 Python 版本（如目前最新的 3.10）。
+
+1. 运行安装包。您应该会看到如下界面。*请无视版本号差异。*
+    ![](pic/1-1.png)
+
 
 [^1]: 引用自 [中文维基百科 Python 词条](https://zh.wikipedia.org/wiki/Python)。

@@ -27,7 +27,7 @@ theme:
 repo_url: https://github.com/devswork-glzx/python-tutorial
 repo_name: devswork-glzx/python-tutorial
 edit_uri: ""
-copyright: "&copy; 2021 开发者工坊 桂林中学分部"
+copyright: "&copy; 2021 开发者工坊 桂林中学分部 | Hosted on GitHub Pages"
 
 plugins:
   - search
@@ -47,3 +47,10 @@ markdown_extensions:
         custom_icons:
           - overrides/.icons
   - attr_list
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - footnotes
+  - admonition
