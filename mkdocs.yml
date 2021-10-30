@@ -1,0 +1,49 @@
+site_name: 开发者工坊 Python 教程文档
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: amber
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: yellow
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+  language: zh
+  icon:
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/devswork-glzx/python-tutorial
+repo_name: devswork-glzx/python-tutorial
+edit_uri: ""
+copyright: "&copy; 2021 开发者工坊 桂林中学分部"
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/devswork-glzx/
+    - icon: custom/gitee
+      link: https://github.com/devswork-glzx/
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - attr_list
