@@ -3,20 +3,21 @@ site_name: 开发者工坊 Python 教程文档
 theme:
   name: material
   custom_dir: overrides
+  logo: icons/devswork.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue
       accent: amber
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: light blue
       accent: yellow
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-sunny
         name: Switch to light mode
   font:
     text: Roboto
@@ -25,9 +26,9 @@ theme:
     repo: fontawesome/brands/github
 
 repo_url: https://github.com/devswork-glzx/python-tutorial
-repo_name: devswork-glzx/python-tutorial
+repo_name: 文档开源仓库
 edit_uri: ""
-copyright: "&copy; 2021 开发者工坊 桂林中学分部 | Hosted on GitHub Pages"
+copyright: "&copy; 2021 开发者工坊 桂林中学分部 | Hosted on GitHub Pages<br/>备案号：<a href=\"https://beian.miit.gov.cn\" target=\"_blank\">桂ICP备18006867号-2</a>"
 
 plugins:
   - search
@@ -54,3 +55,4 @@ markdown_extensions:
   - pymdownx.snippets
   - footnotes
   - admonition
+  - md_in_html
