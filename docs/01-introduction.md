@@ -1,7 +1,7 @@
 # 第 1 课：Python 入门
 
 ## 认识 Python
-Python 是一种解释型脚本语言，可以应用于以下领域：
+Python 是一种广泛使用的解释型、高级和通用的编程语言，可以应用于以下领域：
 
 - Web 和 Internet 开发
 - 科学计算和统计
@@ -13,7 +13,7 @@ Python 是一种解释型脚本语言，可以应用于以下领域：
 
 Python 支持多种编程范型，包括函数式、指令式、结构化、面向对象和反射式编程。它拥有动态类型系统和垃圾回收功能，能够自动管理内存使用，并且其本身拥有一个巨大而广泛的标准库。
 
-Python 的设计哲学强调代码的可读性和简洁的语法，尤其是使用空格缩进划分代码块。相比于 C 或 Java，Python 让开发者能够用更少的代码表达想法。不管是小型还是大型程序，该语言都试图让程序的结构清晰明了。[^1]
+Python 的设计哲学（“优雅”、“明确”、“简单”）强调代码的可读性和简洁的语法，尤其是使用空格缩进划分代码块。相比于 C 或 Java，Python 让开发者能够用更少的代码表达想法。不管是小型还是大型程序，该语言都试图让程序的结构清晰明了。[^1]
 
 [下载 Python](https://www.python.org/downloads/){ .md-button .md-button--primary }
 [在淘宝 NPM 镜像源中获取](https://npmmirror.com/mirrors/python/){ .md-button }
@@ -149,6 +149,22 @@ Python 的设计哲学强调代码的可读性和简洁的语法，尤其是使�
 
 ## print 和 input
 
+`print` 和 `input` 是 Python 中最基础的输入输出函数。
 
+### print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
+- objects: 复数，表示可以一次输出多个对象。输出多个对象时，需要用 `,` 分隔。
+- sep: 用来间隔多个对象，默认值是一个空格。
+- end: 用来设定以什么结尾。默认值是换行符 `\n`，我们可以换成其他字符串。
+- file: 要写入的文件对象。
+- flush: 输出是否被缓存通常决定于 file，但如果 flush 关键字参数为 True，流会被强制刷新。
+
+### input(\[prompt\])
+`input` 是输入函数，使用后可以向程序内输入数据。
+
+- prompt: 提示信息
+
+## 尝试一下 input + print
+为了让 `input` 的内容能够影响 `print` 的输出，我们将临时设置一个变量 `a`。关于变量的内容，详见 [第 2 课 变量]。
 
 [^1]: 引用自 [中文维基百科 Python 词条](https://zh.wikipedia.org/wiki/Python)。

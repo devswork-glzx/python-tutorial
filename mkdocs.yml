@@ -26,7 +26,7 @@ theme:
     repo: fontawesome/brands/github
 
 repo_url: https://github.com/devswork-glzx/python-tutorial
-repo_name: 文档开源仓库
+repo_name: 文档开源仓库（GitHub）
 edit_uri: ""
 copyright: "&copy; 2021 开发者工坊 桂林中学分部 | Hosted on GitHub Pages<br/>备案号：<a href=\"https://beian.miit.gov.cn\" target=\"_blank\">桂ICP备18006867号-2</a>"
 
@@ -56,3 +56,5 @@ markdown_extensions:
   - footnotes
   - admonition
   - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
