@@ -22,10 +22,10 @@ Python 的设计哲学（“优雅”、“明确”、“简单”）强调代�
 
 !!! warning "注意"
     
-    本文仅以 Windows 环境作为讲解，截图以 Python 3.10 安装器作为示例。Linux 环境下一般使用 `python3` 命令即可调用。  
+    本文仅以 Windows 环境作为讲解，安装器截图以 Python 3.10 安装器作为示例。Linux 环境下一般使用 `python3` 命令即可调用。  
     如果您身处桂中学校云机房，Python 3.7.3（32 位）应该已经预装，但如果没有预装的话，你可以从 [Revocloud](https://rc.g1san.cn/DRs8) 获取带有补充 DLL 文件的 Python 3.7.6（32 位）。安装前请先把压缩包内的两个 DLL 文件放至 `system32` 文件夹内。
 
-1. 从 [Python 官网](https://www.python.org/downloads/) 或 [淘宝 NPM 镜像源](https://npmmirror.com/mirrors/python/) 下载适宜的 Python 版本（如目前最新的 3.10）。
+1. 从 [Python 官网](https://www.python.org/downloads/) 或 [淘宝 NPM 镜像源](https://npmmirror.com/mirrors/python/) 下载适宜的 Python 版本（如目前最新的 3.10 或者更为稳定的 3.9）。
     
     !!! danger "警告"
 
