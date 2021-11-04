@@ -1,0 +1,22 @@
+on: 
+  push:
+  schedule:
+    - cron: '0 23 * * *'
+name: Mirror from Gitee
+
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v1
+    - name: Mirror Github to Gitee
+      uses: ./.
+      with:
+        src: github/devswork-glzx
+        dst: gitee/devswork-glzx
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token: ${{ secrets.GITEE_TOKEN }}
+        account_type: org
+        static_list: "python-tutorial"
