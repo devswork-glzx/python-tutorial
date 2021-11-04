@@ -23,13 +23,16 @@ Python 的设计哲学（“优雅”、“明确”、“简单”）强调代�
 !!! warning "注意"
     
     本文仅以 Windows 环境作为讲解，安装器截图以 Python 3.10 安装器作为示例。Linux 环境下一般使用 `python3` 命令即可调用。  
-    如果您身处桂中学校云机房，Python 3.7.3（32 位）应该已经预装，但如果没有预装的话，你可以从 [Revocloud](https://rc.g1san.cn/DRs8) 获取带有补充 DLL 文件的 Python 3.7.6（32 位）。安装前请先把压缩包内的两个 DLL 文件放至 `system32` 文件夹内。
+    如果您身处桂中学校云机房，Python 3.7.3（32 位）应该已经预装，但如果没有预装的话，你可以从 [Revocloud](https://rc.g1san.cn/DRs8) 获取带有补充 DLL 文件的 Python 3.7.6（32 位）。安装前请先把压缩包内的两个 DLL 文件放至 `system32` 文件夹内。  
+    另外，经 [反馈](https://github.com/devswork-glzx/python-tutorial/issues/1)，由于 Python 3.10 缺失对应版本的库，请您选用 [Python 3.9.7](https://www.python.org/downloads/release/python-397/) 或更旧版本。  
+    **注意！** Python 3.9 及更高版本已不再支持 Windows 7 及更旧版本的系统，如有需要，请使用 Windows 8.1 及更新的系统或下载 [Python 3.8.12](https://www.python.org/downloads/release/python-3812/)。
 
-1. 从 [Python 官网](https://www.python.org/downloads/) 或 [淘宝 NPM 镜像源](https://npmmirror.com/mirrors/python/) 下载适宜的 Python 版本（如目前最新的 3.10 或者更为稳定的 3.9）。
+1. 从 [Python 官网](https://www.python.org/downloads/) 或 [淘宝 NPM 镜像源](https://npmmirror.com/mirrors/python/) 下载适宜的 Python 版本（如更为稳定的 3.9）。
     
     !!! danger "警告"
 
-        我们强烈 **不建议** 从 Microsoft Store 获取 Python。虽然我们也拦不住你，但是，**最好别这么做**。
+        我们强烈 **不建议** 从 Microsoft Store 获取 Python。虽然我们也拦不住你，但是，**最好别这么做**。  
+        另外，经 [反馈](https://github.com/devswork-glzx/python-tutorial/issues/1)，由于 Python 3.10 缺失对应版本的库，请您选用 [Python 3.9.7](https://www.python.org/downloads/release/python-397/) 或更旧版本。
 
 2. 运行安装包。您应该会看到如下界面。*请无视版本号差异。*  
     ![](pic/01-1.png)
@@ -88,10 +91,10 @@ Python 的设计哲学（“优雅”、“明确”、“简单”）强调代�
 
 对于初学者，我们建议您使用基本的文本编辑器来简单地编辑 Python 脚本文件。在此我将推荐部分编辑器：
 
-- [Visual Studio Code](https://code.visualstudio.com) + [Python 插件](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - 美观现代的代码编辑器，但**不适合学校云机房使用**。
-- [Notepad3](https://www.rizonesoft.com/downloads/notepad3/) - 轻量简单的文本 / 代码编辑器，适合轻度 Python 代码编写，**推荐在学校云机房使用**。
+- [Visual Studio Code](https://code.visualstudio.com) + [Python 插件](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - 美观现代的代码编辑器，但 **不适合学校云机房使用**。
+- [Notepad3](https://www.rizonesoft.com/downloads/notepad3/) - 轻量简单的文本 / 代码编辑器，适合轻度 Python 代码编写，**适合在学校云机房使用**。
 - Python IDLE - Python 预装的编辑器，功能简单，调试功能偏弱，但轻量。
-- [Sublime Text](https://www.sublimetext.com) - 简单但强大的编辑器，**但该软件本质上为付费软件**。
+- [Sublime Text](https://www.sublimetext.com) - 简单强大的编辑器，**但该软件本质上为付费软件**。
 
 ??? tip "对于有经验者"
 
@@ -103,7 +106,7 @@ Python 的设计哲学（“优雅”、“明确”、“简单”）强调代�
 ## 编写第一个 Hello World 程序
 !!! help "提示"
 
-    本系列教程将以 Visual Studio Code + Python 插件为例进行开发。对于其他编辑器，您可能需要通过命令行运行 Python 脚本。
+    本系列教程将以 Visual Studio Code + Python 插件为例进行开发。对于其他编辑器，您可能需要通过命令行运行 Python 脚本。您可以查看“等一下！我使用的不是 VS Code！”部分来了解详情。
 
 1. 启动 Visual Studio Code（或其他编辑器）。
 
