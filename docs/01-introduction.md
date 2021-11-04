@@ -25,7 +25,8 @@ Python 的设计哲学（“优雅”、“明确”、“简单”）强调代�
     本文仅以 Windows 环境作为讲解，安装器截图以 Python 3.10 安装器作为示例。Linux 环境下一般使用 `python3` 命令即可调用。  
     如果您身处桂中学校云机房，Python 3.7.3（32 位）应该已经预装，但如果没有预装的话，你可以从 [Revocloud](https://rc.g1san.cn/DRs8) 获取带有补充 DLL 文件的 Python 3.7.6（32 位）。安装前请先把压缩包内的两个 DLL 文件放至 `system32` 文件夹内。  
     另外，经 [反馈](https://github.com/devswork-glzx/python-tutorial/issues/1)，由于 Python 3.10 缺失对应版本的库，请您选用 [Python 3.9.7](https://www.python.org/downloads/release/python-397/) 或更旧版本。  
-    **注意！** Python 3.9 及更高版本已不再支持 Windows 7 及更旧版本的系统，如有需要，请使用 Windows 8.1 及更新的系统或下载 [Python 3.8.12](https://www.python.org/downloads/release/python-3812/)。
+    **注意！** Python 3.9 及更高版本已不再支持 Windows 7 及更旧版本的系统，如有需要，请使用 Windows 8.1 及更新的系统或下载 [Python 3.8.12](https://www.python.org/downloads/release/python-3812/)。  
+    当然，你也许可以尝试一下 [Miniconda](https://conda.io/miniconda.html)，但本系列教程暂不考虑 Miniconda。
 
 1. 从 [Python 官网](https://www.python.org/downloads/) 或 [淘宝 NPM 镜像源](https://npmmirror.com/mirrors/python/) 下载适宜的 Python 版本（如更为稳定的 3.9）。
     
