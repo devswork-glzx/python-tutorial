@@ -31,6 +31,16 @@ a = 1
 
     其中，两个整型对象 `1` 和 `2` 将分配给变量 `a` 和 `b`，字符串对象 `"devswork"` 分配给变量 `c`。
 
+## 标准数据类型
+Python3 中有六个标准的数据类型：
+
+- Number（数字）
+- String（字符串）
+- List（列表）
+- Tuple（元组）
+- Set（集合）
+- Dictionary（字典）
+
 [^1]: 引自 [菜鸟教程 Python3 基础语法](https://www.runoob.com/python3/python3-basic-syntax.html)
 [^2]: 引自 [菜鸟教程 Python3 基本数据类型](https://www.runoob.com/python3/python3-data-type.html)
 
