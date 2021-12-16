@@ -3,7 +3,10 @@ site_name: 开发者工坊 Python 教程文档
 theme:
   name: material
   custom_dir: overrides
-  logo: icons/devswork.svg
+
+  icon:
+    logo: fontawesome/brands/python
+
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
