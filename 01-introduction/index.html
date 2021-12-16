@@ -1,0 +1,791 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.2">
+    
+    
+      
+        <title>第 1 课：Python 入门 - 开发者工坊 Python 教程文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.f7951f6f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:""}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="amber">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-python" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="开发者工坊 Python 教程文档" class="md-header__button md-logo" aria-label="开发者工坊 Python 教程文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            开发者工坊 Python 教程文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第 1 课：Python 入门
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="yellow"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/devswork-glzx/python-tutorial" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    文档开源仓库（GitHub）
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="开发者工坊 Python 教程文档" class="md-nav__button md-logo" aria-label="开发者工坊 Python 教程文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    开发者工坊 Python 教程文档
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/devswork-glzx/python-tutorial" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    文档开源仓库（GitHub）
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          第 1 课：Python 入门
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        第 1 课：Python 入门
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    认识 Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    安装 Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ide" class="md-nav__link">
+    选择文本编辑器或 IDE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hello-world" class="md-nav__link">
+    编写第一个 Hello World 程序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#print-input" class="md-nav__link">
+    print 和 input
+  </a>
+  
+    <nav class="md-nav" aria-label="print 和 input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printobjects-sep-endn-filesysstdout-flushfalse" class="md-nav__link">
+    print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputprompt" class="md-nav__link">
+    input([prompt])
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-print" class="md-nav__link">
+    尝试一下 input + print
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-basic-syntax/" class="md-nav__link">
+        第 2 课：基本语法
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-variables/" class="md-nav__link">
+        第 3 课：变量
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-calculate/" class="md-nav__link">
+        第 4 课：运算符
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    认识 Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    安装 Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ide" class="md-nav__link">
+    选择文本编辑器或 IDE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hello-world" class="md-nav__link">
+    编写第一个 Hello World 程序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#print-input" class="md-nav__link">
+    print 和 input
+  </a>
+  
+    <nav class="md-nav" aria-label="print 和 input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printobjects-sep-endn-filesysstdout-flushfalse" class="md-nav__link">
+    print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputprompt" class="md-nav__link">
+    input([prompt])
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-print" class="md-nav__link">
+    尝试一下 input + print
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<h1 id="1-python">第 1 课：Python 入门</h1>
+<h2 id="python">认识 Python</h2>
+<p>Python 是一种广泛使用的解释型、高级和通用的编程语言，可以应用于以下领域：</p>
+<ul>
+<li>Web 和 Internet 开发</li>
+<li>科学计算和统计</li>
+<li>人工智能</li>
+<li>桌面界面开发</li>
+<li>软件开发</li>
+<li>后端开发</li>
+<li>网络爬虫</li>
+</ul>
+<p>Python 支持多种编程范型，包括函数式、指令式、结构化、面向对象和反射式编程。它拥有动态类型系统和垃圾回收功能，能够自动管理内存使用，并且其本身拥有一个巨大而广泛的标准库。</p>
+<p>Python 的设计哲学（“优雅”、“明确”、“简单”）强调代码的可读性和简洁的语法，尤其是使用空格缩进划分代码块。相比于 C 或 Java，Python 让开发者能够用更少的代码表达想法。不管是小型还是大型程序，该语言都试图让程序的结构清晰明了。<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p><a class="md-button md-button--primary" href="https://www.python.org/downloads/">下载 Python</a>
+<a class="md-button" href="https://npmmirror.com/mirrors/python/">在淘宝 NPM 镜像源中获取</a></p>
+<h2 id="python_1">安装 Python</h2>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>本文仅以 Windows 环境作为讲解，安装器截图以 Python 3.10 安装器作为示例。Linux 环境下一般使用 <code>python3</code> 命令即可调用。<br />
+如果您身处桂中学校云机房，Python 3.7.3（32 位）应该已经预装，但如果没有预装的话，你可以从 <a href="https://rc.g1san.cn/DRs8">Revocloud</a> 获取带有补充 DLL 文件的 Python 3.7.6（32 位）。安装前请先把压缩包内的两个 DLL 文件放至 <code>system32</code> 文件夹内。<br />
+另外，经 <a href="https://github.com/devswork-glzx/python-tutorial/issues/1">反馈</a>，由于 Python 3.10 缺失对应版本的库，请您选用 <a href="https://www.python.org/downloads/release/python-397/">Python 3.9.7</a> 或更旧版本。</p>
+<p><strong>注意！</strong> Python 3.9 及更高版本已不再支持 Windows 7 及更旧版本的系统，如有需要，请使用 Windows 8.1 及更新的系统或下载 <a href="https://www.python.org/downloads/release/python-3812/">Python 3.8.12</a>。<br />
+当然，你也许可以尝试一下 <a href="https://conda.io/miniconda.html">Miniconda</a>，但本系列教程暂不考虑 Miniconda。</p>
+</div>
+<ol>
+<li>
+<p>从 <a href="https://www.python.org/downloads/">Python 官网</a> 或 <a href="https://npmmirror.com/mirrors/python/">淘宝 NPM 镜像源</a> 下载适宜的 Python 版本（如更为稳定的 3.9）。</p>
+<div class="admonition danger">
+<p class="admonition-title">警告</p>
+<p>我们强烈 <strong>不建议</strong> 从 Microsoft Store 获取 Python。虽然我们也拦不住你，但是，<strong>最好别这么做</strong>。<br />
+另外，经 <a href="https://github.com/devswork-glzx/python-tutorial/issues/1">反馈</a>，由于 Python 3.10 缺失对应版本的库，请您选用 <a href="https://www.python.org/downloads/release/python-397/">Python 3.9.7</a> 或更旧版本。</p>
+</div>
+</li>
+<li>
+<p>运行安装包。您应该会看到如下界面。<em>请无视版本号差异。</em><br />
+<img alt="" src="../pic/01-1.png" /></p>
+</li>
+<li>
+<p>点击 <code>Customize installation</code>（自定义安装）选项。</p>
+<div class="admonition tip">
+<p class="admonition-title">提示</p>
+<p>你可以先勾选 <code>Add Python to PATH</code> 并直接开始安装，但我建议使用 <code>Customize installation</code> 选项进行自定义安装。</p>
+</div>
+</li>
+<li>
+<p>保持 <code>Optional Features</code> 页面下的选项为全选即可，然后点击 <code>Next</code>。<br />
+<img alt="" src="../pic/01-2.png" /></p>
+</li>
+<li>
+<p>在 <code>Advanced Options</code> 下勾选 <code>Install for all users</code>（推荐）和 <code>Add Python to environment variables</code>（必须）。其余的 <code>debugging tools</code> 按需选择，安装目录按需修改。<br />
+<img alt="" src="../pic/01-3-after.png" /></p>
+<details class="note">
+<summary>查看配置前截图</summary>
+<p><img alt="" src="../pic/01-3-before.png" /></p>
+</details>
+</li>
+<li>
+<p>点击 <code>Install</code> 并允许 Python 安装器使用管理员权限（若启用了 PAC），等待安装完成。
+    <!-- 安装完成的截图懒得截了 xD --></p>
+</li>
+<li>
+<p>安装完成后，先别急着关闭安装器，选择 <code>Disable path length limit</code> 来禁用 Windows 原本的 260 字符环境变量限制，以便日后开发。（<strong>这一点对于前序未使用 <code>Install for all users</code> 选项的用户来说尤为重要，但无论如何，你都应该点击这个按钮。</strong>）  </p>
+<details class="tip">
+<summary>如果我忘记按这个按钮了呢？</summary>
+<p>你可以新建一个 <code>.py</code> 文件，输入以下内容并运行该文件：
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">winreg</span>
+<span class="n">winreg</span><span class="o">.</span><span class="n">SetValueEx</span><span class="p">(</span><span class="n">winreg</span><span class="o">.</span><span class="n">CreateKey</span><span class="p">(</span><span class="n">winreg</span><span class="o">.</span><span class="n">HKEY_LOCAL_MACHINE</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;SYSTEM\CurrentControlSet\Control\FileSystem&#39;</span><span class="p">),</span> <span class="s1">&#39;LongPathsEnabled&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">winreg</span><span class="o">.</span><span class="n">REG_DWORD</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></p>
+<p>或者，你也可以直接使用 <code>regedit</code> 编辑注册表：<br />
+位置：<code>\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem</code><br />
+名称：<code>LongPathsEnabled</code><br />
+键值：<code>1</code></p>
+</details>
+</li>
+<li>
+<p>运行任意一款终端程序（cmd / PowerShell / ...），输入 <code>python</code> 命令，如果出现了类似如下界面（即 Python &lt;版本号&gt; 和 <code>&gt;&gt;&gt;</code>），那么 Python 就安装成功并正确配置了。<br />
+<img alt="" src="../pic/01-4.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">提示</p>
+<p>如果你在 Windows 系统中安装了多个 Python 环境，那么你可以使用 <code>py</code> 启动器启动相应版本的 Python，例如：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 启动 Python 3</span>
+py -3
+<span class="c1"># 启动 Python 3.9</span>
+py -3.9
+<span class="c1"># 列出所有已安装的 Python 及其对应目录</span>
+py -0p 
+py --list-paths
+</code></pre></div>
+</div>
+</li>
+</ol>
+<h2 id="ide">选择文本编辑器或 IDE</h2>
+<p>对于初学者，我们建议您使用基本的文本编辑器来简单地编辑 Python 脚本文件。在此我将推荐部分编辑器：</p>
+<ul>
+<li><a href="https://code.visualstudio.com">Visual Studio Code</a> + <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python 插件</a> - 美观现代的代码编辑器，但 <strong>不适合学校云机房使用</strong>。</li>
+<li><a href="https://www.rizonesoft.com/downloads/notepad3/">Notepad3</a> - 轻量简单的文本 / 代码编辑器，适合轻度 Python 代码编写，<strong>适合在学校云机房使用</strong>。</li>
+<li>Python IDLE - Python 预装的编辑器，功能简单，调试功能偏弱，但轻量。</li>
+<li><a href="https://www.sublimetext.com">Sublime Text</a> - 简单强大的编辑器，<strong>但该软件本质上为付费软件</strong>。</li>
+</ul>
+<details class="tip">
+<summary>对于有经验者</summary>
+<p>如果你已经有一定经验，你可以试试这些编辑器和 IDE：</p>
+<ul>
+<li><a href="https://visualstudio.microsoft.com/zh-hans/">Visual Studio</a> + Python 开发</li>
+<li><a href="https://www.jetbrains.com/zh-cn/pycharm/">JetBrains PyCharm</a></li>
+</ul>
+</details>
+<h2 id="hello-world">编写第一个 Hello World 程序</h2>
+<div class="admonition help">
+<p class="admonition-title">提示</p>
+<p>本系列教程将以 Visual Studio Code + Python 插件为例进行开发。对于其他编辑器，您可能需要通过命令行运行 Python 脚本。您可以查看“等一下！我使用的不是 VS Code！”部分来了解详情。</p>
+</div>
+<ol>
+<li>
+<p>启动 Visual Studio Code（或其他编辑器）。</p>
+</li>
+<li>
+<p>安装 <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python 插件</a>。如果你已经安装 Python 插件，那么打开 Python 文件后，插件会自动激活。<br />
+你也许能看到开始页面中的 <code>Get started with Python development</code> 板块，此时 Python 插件已经可以正常使用了。<br />
+<img alt="" loading="lazy" src="../pic/01-5.png" /></p>
+</li>
+<li>
+<p>新建一个 Python 文件（后缀为 <code>.py</code>），输入以下内容并保存：
+    <div class="highlight"><pre><span></span><code><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>点击窗口右上角的三角形播放按钮，观察下方出现的终端，它应该会输出 <code>hello world</code>。<br />
+<img alt="" src="../pic/01-6.png" /><br />
+<img alt="" src="../pic/01-7.png" /><br />
+如果你乐意的话，你也可以在编辑区点击右键，选择 <code>在交互式窗口中运行当前文件</code>，该选项可以带来更直观的调试体验。</p>
+</li>
+<li>
+<p>恭喜！你已经迈出了 Python 编程的第一步了！</p>
+</li>
+</ol>
+<details class="question">
+<summary>等一下！我使用的不是 VS Code！</summary>
+<p>一样没问题。你可以参考如下步骤：</p>
+<ol>
+<li>
+<p>同样新建一个 <code>.py</code> 文件，输入同样的代码。</p>
+</li>
+<li>
+<p>启动终端，将目录切换到 Python 文件所在的位置。<br />
+例如，如果你的文件在 <code>D:\python-examples\helloworld.py</code>，那么请输入：
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> D:/python-examples
+</code></pre></div>
+如果您无法切换到 C 盘以外的目录，请尝试使用 Windows PowerShell 或 <a href="https://hub.fastgit.org/PowerShell/PowerShell/releases">全新的 PowerShell 7</a>。</p>
+</li>
+<li>
+<p>输入如下命令：
+<div class="highlight"><pre><span></span><code>python helloworld.py
+<span class="c1"># 或者</span>
+py -3 helloworld.py
+</code></pre></div></p>
+</li>
+<li>
+<p>观察终端，它应该会输出 <code>hello world</code>。</p>
+</li>
+<li>
+<p>大功告成！</p>
+</li>
+</ol>
+</details>
+<h2 id="print-input">print 和 input</h2>
+<p><code>print</code> 和 <code>input</code> 是 Python 中最基础的输入输出函数。</p>
+<h3 id="printobjects-sep-endn-filesysstdout-flushfalse">print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)</h3>
+<ul>
+<li>objects: 复数，表示可以一次输出多个对象。输出多个对象时，需要用 <code>,</code> 分隔。</li>
+<li>sep: 用来间隔多个对象，默认值是一个空格。</li>
+<li>end: 用来设定以什么结尾。默认值是换行符 <code>\n</code>，我们可以换成其他字符串。</li>
+<li>file: 要写入的文件对象。</li>
+<li>flush: 输出是否被缓存通常决定于 file，但如果 flush 关键字参数为 True，流会被强制刷新。</li>
+</ul>
+<h3 id="inputprompt">input([prompt])</h3>
+<p><code>input</code> 是输入函数，使用后可以向程序内输入数据。</p>
+<ul>
+<li>prompt: 提示信息</li>
+</ul>
+<h2 id="input-print">尝试一下 input + print</h2>
+<p>为了让 <code>input</code> 的内容能够影响 <code>print</code> 的输出，我们将临时设置一个变量 <code>a</code>。关于变量的内容，详见 <a href="../03-variables/">第 3 课 变量</a>。</p>
+<p>接下来，再新建一个 <code>.py</code> 文件，输入以下内容：</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;输入内容：&quot;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;输入的是 &quot;</span> <span class="o">+</span> <span class="n">a</span><span class="p">)</span>
+</code></pre></div>
+<p>运行文件，输入一些文本，观察返回的内容，然后重复运行并输入不同内容，再次观察。</p>
+<p>你应该能发现输出的内容会随着输入内容的改变而改变。这就是一个简单的输入输出实例。</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>引用自 <a href="https://zh.wikipedia.org/wiki/Python">中文维基百科 Python 词条</a>。&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="页脚">
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="上一页: 首页" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              首页
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../02-basic-syntax/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第 2 课：基本语法" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              第 2 课：基本语法
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2021 开发者工坊 桂林中学分部 | Hosted on GitHub Pages<br/>备案号：<a href="https://beian.miit.gov.cn" target="_blank">桂ICP备18006867号-2</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/devswork-glzx/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://gitee.com/devswork-glzx/" target="_blank" rel="noopener" title="gitee.com" class="md-social__link">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32ZM24.0988 14.2225L15.0124 14.2227C14.5761 14.2227 14.2224 14.5763 14.2223 15.0126L14.2213 16.9879C14.2212 17.4242 14.5749 17.7781 15.0113 17.7782C15.0113 17.7782 15.0114 17.7782 15.0115 17.7782L20.5432 17.7779C20.9796 17.7779 21.3334 18.1317 21.3334 18.568V18.568L21.3334 18.7655V18.9631C21.3334 20.2722 20.2721 21.3334 18.963 21.3334L11.4563 21.3334C11.02 21.3334 10.6663 20.9797 10.6663 20.5434L10.666 13.0374C10.6659 11.7283 11.7271 10.667 13.0363 10.667H13.0363L24.0966 10.6666C24.5327 10.6666 24.8864 10.3131 24.8867 9.87694L24.8889 7.90172C24.8892 7.46535 24.5356 7.11138 24.0993 7.11111C24.0991 7.11111 24.0989 7.11111 24.0988 7.11111L13.0371 7.11163C9.76434 7.11163 7.11122 9.76473 7.11121 13.0375L7.11111 24.0988C7.11111 24.5351 7.46485 24.8889 7.90122 24.8889L19.5557 24.8889C22.5011 24.8889 24.8889 22.5011 24.8889 19.5557V15.0126C24.8889 14.5763 24.5351 14.2225 24.0988 14.2225V14.2225Z"/>
+</svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "search": "../assets/javascripts/workers/search.0bbba5b5.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.649a939e.min.js"></script>
+      
+    
+  </body>
+</html>
