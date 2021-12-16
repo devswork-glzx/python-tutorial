@@ -38,7 +38,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/devswork-glzx/
     - icon: custom/gitee
-      link: https://github.com/devswork-glzx/
+      link: https://gitee.com/devswork-glzx/
 
 markdown_extensions:
   - pymdownx.emoji:
